@@ -29,3 +29,13 @@ else{
     console.log("Not Leap Year");
 }
 
+// Factorial
+
+const num = 9;
+let fact = 1;
+
+for(i=1; i<= num; i++){
+    fact *= i;
+}
+
+console.log(fact);
