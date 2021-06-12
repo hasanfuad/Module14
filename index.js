@@ -31,11 +31,40 @@ else{
 
 // Factorial
 
-const num = 9;
-let fact = 1;
+// const num = 9;
+// let fact = 1;
 
-for(i=1; i<= num; i++){
-    fact *= i;
+// for(i=1; i<= num; i++){
+//     fact *= i;
+    // console.log(i+" X "+ fact);
+// }
+
+// factorial with while loop
+
+// function factorial(num){
+//     let i = 1;
+//     let fact = 1;
+//     while(i <= num){
+//         fact *= i;
+//         i++;
+//     }
+//     return fact;
+
+// }
+
+// const res = factorial(10);
+
+// console.log(res);
+
+function recursiveFactorial(num){
+
+    if(num == 0){
+        return 1;
+    }
+    else{
+        return num * recursiveFactorial(num - 1);
+    }
 }
 
-console.log(fact);
+const res = recursiveFactorial(6);
+console.log(res);
