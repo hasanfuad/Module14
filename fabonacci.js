@@ -1,33 +1,33 @@
 // Fabonacci
 
-// function fibonacci(num){
-//     let fibo = [0,1];
+function fibonacci(num){
+    let fibo = [0,1];
 
-//     for(let i = 2; i <= num; i++){
-//         fibo[i] = fibo[i-1] + fibo[i-2];
-//     }
-//     return fibo;
-// }
+    for(let i = 2; i <= num; i++){
+        fibo[i] = fibo[i-1] + fibo[i-2];
+    }
+    return fibo;
+}
 
-// console.log(fibonacci(5));
+console.log(fibonacci(5));
 
 // recusrive way ******************
 
-// function fabo(n){
-//     if(n == 0){
-//         return 0;
-//     }
-//     if(n == 1){
-//         return 1;
-//     }
-//     else{
-//         return fabo(n-1) + fabo(n-2);
-//     }
-// }
+function fabo(n){
+    if(n == 0){
+        return 0;
+    }
+    if(n == 1){
+        return 1;
+    }
+    else{
+        return fabo(n-1) + fabo(n-2);
+    }
+}
 
-// const res = fabo(10)
+const res = fabo(10)
 
-// console.log(res);
+console.log(res);
 
 // Fabonacci in a series 
 
